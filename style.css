@@ -7,6 +7,8 @@ body{
     background-color: black;
 }
 
+
+
 h1 {
   font-family: 'Saira Semi Condensed', sans-serif;
   font-weight: 800;
@@ -14,11 +16,24 @@ h1 {
   color: white;
 }
 
+@media screen and (max-width: 595px){
+  h1 {
+    font-size: 31.25px;
+  }
+}
+
 h2 {
   font-family: 'Saira Semi Condensed', sans-serif;
   font-weight: 800;
   font-size: 39.06px;
   color: white;
+}
+
+@media screen and (max-width: 595px){
+  h2 {
+    font-size: 25px;
+    line-height: 200%;
+  }
 }
 
 p {
@@ -33,6 +48,22 @@ p {
   line-height: 200%;
   align-self: center;
 }
+
+@media screen and (max-width: 991px){
+  p {
+    padding-top: 150%;
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 595px){
+  p {
+    padding-top: 150%;
+    font-size: 14px;
+  }
+}
+
+
 
 h1.muck{
   padding-top: 13%;
@@ -75,7 +106,12 @@ section.container{
   width: 101%;
   height: 13%;
   opacity: 0.75;
+}
 
+@media screen and (max-width: 595px){
+  .title{
+    height: 9%;
+  }
 }
 
 .description{
@@ -90,7 +126,6 @@ section.container{
 
 .awards{
   position: absolute;
-
   top: 63%;
   width: 100%;
   height: 50%;
@@ -98,6 +133,12 @@ section.container{
   align-items: center;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
+}
+
+@media screen and (max-width: 595px){
+  .awards {
+    top: 55%;
+  }
 }
 
 #trophy{
