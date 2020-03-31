@@ -16,6 +16,12 @@ h1 {
   color: white;
 }
 
+@media screen and (max-width: 991px){
+  h1{
+    font-size: 39.06px;
+  }
+}
+
 @media screen and (max-width: 595px){
   h1 {
     font-size: 31.25px;
@@ -27,6 +33,12 @@ h2 {
   font-weight: 800;
   font-size: 39.06px;
   color: white;
+}
+
+@media screen and (max-width: 991px){
+  h2{
+    font-size: 31.25px;
+  }
 }
 
 @media screen and (max-width: 595px){
@@ -66,8 +78,20 @@ p {
 
 
 h1.muck{
-  padding-top: 13%;
+  padding-top: 20%;
+}
 
+@media screen and (max-width: 991px){
+  h1.muck{
+    margin-top: 5%;
+
+  }
+}
+
+@media screen and (max-width: 595px){
+  h1.muck{
+    margin-top: 3%;
+  }
 }
 
 h2.coming_soon{
@@ -104,30 +128,45 @@ section.container{
   transform: translate(-50%, -50%);
   background-color: black;
   width: 101%;
-  height: 13%;
+  height: 30%;
   opacity: 0.75;
+}
+
+@media screen and (max-width: 991px){
+  .title{
+    height: 80%;
+  }
 }
 
 @media screen and (max-width: 595px){
   .title{
-    height: 9%;
+    height: 70%;
   }
 }
 
 .description{
   position: relative;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  width: 50%;
+
 }
+
 
 .teens{
   padding-top: 10%;
+  position: relative;
+  margin-bottom: -50%;
+}
+
+@media screen and (max-width: 991px){
+  .teens{
+    margin-bottom: -140%;
+  }
 }
 
 .awards{
-  position: absolute;
-  top: 63%;
-  width: 100%;
+  position: relative;
+  padding-top: 10%;
+  width: 50%;
   height: 50%;
   display: grid;
   align-items: center;
@@ -135,11 +174,16 @@ section.container{
   grid-template-rows: 1fr;
 }
 
-@media screen and (max-width: 595px){
-  .awards {
-    top: 55%;
+#monster{
+
+}
+
+@media screen and (max-width: 991px){
+  #monster{
+    margin-bottom: -80%;
   }
 }
+
 
 #trophy{
   grid-column: 0 / 1;
